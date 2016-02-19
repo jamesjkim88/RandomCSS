@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>click</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+
+        h1{
+            color: blue;
+            transition: color 500ms ease;
+        }
+
+        input[type="checkbox"]:checked ~ h1{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<input type="checkbox">
+<h1>Change</h1>
+</body>
+</html>

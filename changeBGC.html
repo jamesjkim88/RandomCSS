@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+
+        div{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<script>
+
+    var html = '';
+    var red;
+    var blue;
+    var green;
+    var rgbColor;
+    var color;
+    var allDiv = document.getElementsByTagName("div");
+
+    function setColor(){
+        red = Math.floor(Math.random()*256);
+        green = Math.floor(Math.random()*256);
+        blue = Math.floor(Math.random()*256);
+        rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        return rgbColor
+    }
+
+    for(var i = 0; i<10; i++){
+        html += '<div style="background-color:' + setColor() + '"></div>';
+    }
+
+    document.write(html);
+
+    function changeColor(){
+        for(i = 0; i<allDiv.length; i++){
+            allDiv[i].style.backgroundColor = setColor();
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

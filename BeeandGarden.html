@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bee and Garden</title>
+    <style>
+
+        body,html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes fly {
+            0% {background-position: 20% 20% , 0}
+            50%{background-position: 82% 8%, 0 }
+            100%{background-position: 5% 74%, 0}
+        }
+
+        div{
+            background-image: url("http://emoji.fileformat.info/gemoji/bee.png"), url("http://thebressinghamgardens.com/wp-content/uploads/2012/02/DellGarden-rb2586-17.jpg");
+            width: 500px;
+            height: 500px;
+            background-size: 100px, cover;
+            background-repeat: no-repeat;
+        }
+
+        div:hover{
+            animation: fly 5s ease infinite alternate;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>
